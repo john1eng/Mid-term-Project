@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Postcard Generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:300,400|Oswald:700">
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main1.css">
+	<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+
+<div class="content-wrapper" style="display:inline-block;">
+		<img src="fruit_pictures/FNA_logo.jpg" class="logo" alt="NAPS Logo">
+		<nav>
+			<ul>
+				<li><a href="#fruitFacts">Fruit Facts</a></li>
+				<li><a href="#fruitArt">Fruit Arts</a></li>
+				<li><a href="#volunteer">Volunteer</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="hero">
+	<h1>Healthy Fruit Association</h1>
+	<p>Why is it important to eat fruit?</p>
+</div>
+
+<main role="main">
+	<div class="content-wrapper">
+		<p id="press-quote">'The roots of education are bitter, but the fruit is sweet. -- Aristotle'</p>
+		<p>Eating fruit provides health benefits — people who eat more fruits and vegetables as part of an overall healthy diet are likely to have a reduced risk of some chronic diseases. Fruits provide nutrients vital for health and maintenance of your body.
+		<!-- <a href="#">contact&nbsp;us</a>.</p> -->
+
+		<figure>
+			<img src="fruit_pictures/fruits.jpg" alt="fruits">
+			<figcaption>Many choices of fruits</figcaption>
+		</figure>
+		<h2>Nutrients</h2>
+			<ol>
+				<li>Most fruits are naturally low in fat, sodium, and calories. None have cholesterol.</li>
+				<li>Fruits are sources of many essential nutrients that are underconsumed, including potassium, dietary fiber, vitamin C, and folate (folic acid).</li>
+				<li>Diets rich in potassium may help to maintain healthy blood pressure. Fruit sources of potassium include bananas, prunes and prune juice, dried peaches and apricots, cantaloupe, honeydew melon, and orange juice.</li>
+				<li>Dietary fiber from fruits, as part of an overall healthy diet, helps reduce blood cholesterol levels and may lower risk of heart disease. Fiber is important for proper bowel function. It helps reduce constipation and diverticulosis. Fiber-containing foods such as fruits help provide a feeling of fullness with fewer calories. Whole or cut-up fruits are sources of dietary fiber; fruit juices contain little or no fiber.</li>
+				<li>Vitamin C is important for growth and repair of all body tissues, helps heal cuts and wounds, and keeps teeth and gums healthy.</li>
+				<li>Folate (folic acid) helps the body form red blood cells. Women of childbearing age who may become pregnant should consume adequate folate from foods, and in addition 400 mcg of synthetic folic acid from fortified foods or supplements. This reduces the risk of neural tube defects, spina bifida, and anencephaly during fetal development.</li>
+			</ol>
+		<h2>Health Benefits</h2>
+			<ol>
+				<li>Eating a diet rich in vegetables and fruits as part of an overall healthy diet may reduce risk for heart disease, including heart attack and stroke.</li>
+				<li>Eating a diet rich in some vegetables and fruits as part of an overall healthy diet may protect against certain types of cancers.</li>
+				<li>Diets rich in foods containing fiber, such as some vegetables and fruits, may reduce the risk of heart disease, obesity, and type 2 diabetes.</li>
+				<li>Eating vegetables and fruits rich in potassium as part of an overall healthy diet may lower blood pressure, and may also reduce the risk of developing kidney stones and help to decrease bone loss.</li>
+				<li>Eating foods such as fruits that are lower in calories per cup instead of some other higher-calorie food may be useful in helping to lower calorie intake.</li>
+			</ol>
+	</div>
+</main>
+
+<div class="outer-wrapper" style="padding-bottom:100px; margin-top: 30px">
+	<header class="clearfix">
+		<h1 id="fruitFacts">Fruit Facts</h1>
+		<select id="state-list">
+			<option value="Fruit">Choose a Fruit</option>
+			<option value="Strawberry">Strawberry</option>
+			<option value="Orange">Orange</option>
+			<option value="Watermelon">Watermelon</option>
+			<option value="Avacado">Avacado</option>
+			<option value="Plum">Plum</option>
+			<option value="Banana">Banana</option>
+			<option value="Tomato">Tomato</option>
+			<option value="Blueberry">Blueberry</option>
+			<option value="Apple">Apple</option>
+			<option value="Raspberries">Raspberries</option>
+			<option value="Pineapple">Pineapple</option>
+			<option value="Mango">Mango</option>
+		</select>
+	</header>
+
+	<div class="main clearfix">
+		<div class="img-holder">
+			<div>
+				<img id="info-pic" src="fruit_pictures/fruits.jpg" alt="Orange" width="260">
+				<p id="info-name">fruits</p>
+			</div>
+		</div>
+		<div class="info-holder">
+			<p><strong>Type: </strong><span id="info-type">All Kinds</span></p>
+			<p><strong>Source: </strong><span id="info-good_source_of">Nutritious and delicious</span></p>
+			<p><strong>Eatten: </strong><span id="info-can_be_eatten">Various</span></p>
+			<p><strong>Store: </strong><span id="info-store">N/A</span></p>
+			<p><strong>Ripen: </strong><span id="info-ripen">N/A</span></p>
+		</div>
+	</div>
+</div>
+<div class="outer-wrapper">
+	<div class="content-wrapper">
+		<header>
+			<h1 id="fruitArt">Botanical Art Generator</h1>
+			<p class="subtitle">Generate Botanical Art Postcards of All Fruits</p>
+		</header>
+		<main role="main">
+			<div class="first step">
+				<h2>1. Choose a Fruit</h2>
+				<select name="states" id="states">
+					<!-- <option selected disabled value="fruits">Fruits</option> -->
+					<!-- <option value="al">Alabama</option> -->
+					<option value="fruits">Choose a Fruit</option>
+					<option value="strawberry">Strawberry</option>
+					<option value="orange">Orange</option>
+					<option value="watermelon">Watermelon</option>
+					<option value="avacado">Avacado</option>
+					<option value="plum">Plum</option>
+					<option value="banana">Banana</option>
+					<option value="Tomato">Tomato</option>
+					<option value="blueberry">Blueberry</option>
+					<option value="apple">Apple</option>
+					<option value="raspberry">Raspberries</option>
+					<option value="pineapple">Pineapple</option>
+					<option value="mango">Mango</option>
+				</select>
+			</div>
+			<div class="second step">
+				<h2>2. Enjoy Your Postcard!</h2>
+				<div id="postcard">
+					<!-- <p id="greeting">To Generate a Postcard</p>
+					<p id="state-heading">Choose a fruit</p> -->
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+<script src="js/fruit-data1.js"></script>
+<script>
+	document.getElementById('state-list').onchange = function() {
+		var selected = this.value;
+		document.getElementById('info-pic').src= 'fruit_pictures/'+selected+'.jpg';
+		console.log(selected);
+		document.getElementById('info-name').textContent = fruitData[this.value].name;
+		document.getElementById('info-type').textContent = fruitData[this.value].type;
+		document.getElementById('info-good_source_of').textContent = fruitData[this.value].good_source_of;
+		document.getElementById('info-can_be_eatten').textContent = fruitData[this.value].can_be_eatten;
+		document.getElementById('info-store').textContent = fruitData[this.value].store;
+		document.getElementById('info-ripen').textContent = fruitData[this.value].ripen;
+		//document.getElementById('info-nickname').textContent = stateData[this.value].nickname;
+	};
+</script>
+<footer>
+	<p>Copyright © Food Network Association</p>
+</footer>
+
+<script>
+	var quotesArray = [
+		'The roots of education are bitter, but the fruit is sweet. -- Aristotle',
+		'A tree is known by its fruit; a man by his deeds. -- Saint Basil',
+		'The fruit of your own hard work is the sweetest. -- Deepika Padukone',
+		'Life without love is like a tree without blossoms or fruit. -- Khalil Gibran',
+		'Patience is bitter, but its fruit is sweet. -- Jean-Jacques Rousseau',
+		'Love is a fruit in season at all times, and within reach of every hand. -- Mother Teresa',
+		'Your life is the fruit of your own doing. You have no one to blame but yourself. -- Joseph Campbell',
+		'The trees that are slow to grow bear the best fruit. -- Moliere',
+		'Apples, grapes... any kind of fruit gives me the energy I need to get through my busy day. -- Kristin Chenoweth',
+		'The fruit derived from labor is the sweetest of pleasures. -- Luc de Clapiers'
+
+	];
+	console.log(quotesArray + "testing");
+	var randomNumber = Math.floor(Math.random()*quotesArray.length);
+	document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '” — ' + quotesArray[randomNumber].split(' — ')[1];
+	//console.log( 	quotesArray[randomNumber].split(' — ')[0] );
+</script>
+<div class="container">
+	<h1 id="volunteer">Helping Hands Volunteer Application</h1>
+	<p>Thank you so much for your interest in volunteering with Helping Hands United! Please fill out the brief form below to give us a little background information about yourself. One of our volunteer co-ordinators will contact you via email or phone with seven days to discuss the opportunity with you further.</p>
+	<div class="form-container">
+		<form id="vol-form">
+			<div class="form-section">
+				<label for="first-name">First Name:</label>
+				<input id="first-name" name="first-name" required type="text">
+			</div>
+			<div class="form-section">
+				<label for="last-name">Last Name:</label>
+				<input id="last-name" name="last-name" required type="text">
+			</div>
+			<div class="form-section">
+				<label for="email">Email:</label>
+				<input id="email" name="email" required type="email">
+			</div>
+			<div class="form-section">
+				<label for="phone">Phone:</label>
+				<input id="phone" name="phone" required type="tel">
+			</div>
+			<div class="form-section">
+				<label for="prev-vol">Past Experience:</label>
+				<input id="prev-vol" name="prev-vol" required type="text">
+			</div>
+			<div class="form-section" >
+				<label for="from-year" class="from-label">From:</label>
+				<select id="from-year" name="from-year">
+					<option value="blank"></option>
+					<option value="1999">Before 2000</option>
+					<option value="2000">2000</option>
+					<option value="2001">2001</option>
+					<option value="2002">2002</option>
+					<option value="2003">2003</option>
+					<option value="2004">2004</option>
+					<option value="2005">2005</option>
+					<option value="2006">2006</option>
+					<option value="2007">2007</option>
+					<option value="2008">2008</option>
+					<option value="2009">2009</option>
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+				</select>
+				<label for="to-year" class="to-label">To:</label>
+				<select id="to-year" name="to-year">
+					<option value="blank"></option>
+					<option value="1999">Before 2000</option>
+					<option value="2000">2000</option>
+					<option value="2001">2001</option>
+					<option value="2002">2002</option>
+					<option value="2003">2003</option>
+					<option value="2004">2004</option>
+					<option value="2005">2005</option>
+					<option value="2006">2006</option>
+					<option value="2007">2007</option>
+					<option value="2008">2008</option>
+					<option value="2009">2009</option>
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+				</select>
+			</div>
+			<input id="submit" type="submit" value="Submit" onclick= "checkData();">
+		</form>
+	</div>
+</div>
+<footer>
+	<p>Made in NY <br>Copyright © Postcard Generator</p>
+</footer>
+
+<script>
+	var states = document.getElementById('states');
+
+	states.onchange = function() {
+		// console.log('state index: ' + states.selectedIndex);
+		// console.log('state name: ' + states.options[states.selectedIndex].text);
+		// console.log('img/' + states.value + '@2x.jpg');
+		// var src_pic = 'fruit_arts/' + states.value +'.jpg'
+		// console.log(src_pic);
+		//document.getElementById('postcard').src= "fruit_arts/avacado.jpg";
+		document.getElementById('postcard').style.backgroundImage = 'url(fruit_arts/' + states.value + '.jpg)';
+		document.getElementById('greeting').innerHTML = 'Greetings from';
+		document.getElementById('state-heading').innerHTML = states.options[states.selectedIndex].text;
+	}
+</script>
+<script>
+function checkData(){
+// console.log(document.getElementById("first-name").value);
+
+if(!isNaN(document.getElementById("first-name").value))
+alert("Please enter characters in First Name");
+if(!isNaN(document.getElementById("last-name").value))
+alert("Please enter character in Last Name");
+if(isNaN(document.getElementById("phone").value))
+alert("Please enter number in Phone");
+if((document.getElementById("prev-vol").value) == "")
+alert("Please enter field");
+
+
+// if(NumberisNaN(document.getElementById("phone").value)){
+
+// location.href='submission.html';
+}
+
+</script>
+</body>
+</html>
